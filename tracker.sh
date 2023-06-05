@@ -49,8 +49,8 @@ GET_TRACKERS() {
     if [[ -z "${CUSTOM_TRACKER_URL}" ]]; then
         echo && echo -e "$(DATE_TIME) ${INFO} Get BT trackers..."
         TRACKER=$(
-            ${DOWNLOADER} https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_all.txt ||
-                ${DOWNLOADER} https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_all_udp.txt ||
+            ${DOWNLOADER} https://raw.githubusercontent.com/lologu1/aria2.conf/master/btaria2.txt ||
+                ${DOWNLOADER} https://raw.githubusercontent.com/XIU2/TrackersListCollection/master/all_aria2.txt ||
                 ${DOWNLOADER} https://raw.githubusercontent.com/XIU2/TrackersListCollection/master/all_aria2.txt
         )
     else
