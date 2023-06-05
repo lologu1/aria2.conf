@@ -51,7 +51,7 @@ GET_TRACKERS() {
         TRACKER=$(
             ${DOWNLOADER} https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_all.txt ||
                 ${DOWNLOADER} https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_all_udp.txt ||
-                ${DOWNLOADER} https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_all_ip.txt
+                ${DOWNLOADER} https://raw.githubusercontent.com/XIU2/TrackersListCollection/master/all_aria2.txt
         )
     else
         echo && echo -e "$(DATE_TIME) ${INFO} Get BT trackers from url(s):${CUSTOM_TRACKER_URL} ..."
